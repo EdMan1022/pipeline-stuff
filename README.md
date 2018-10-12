@@ -54,3 +54,8 @@ class' name.
 Instantiation is also very flexible in groovy (compared to Java).
 You can def an object using `instance = new Class(args)`,
 `instance = [args] as Class`, or even `Class instance = [args]`.
+
+If no constructor is explicitly implemented,
+you can still create an instance like above using a `map`
+(a collection of `key`: `value` pairs).
+See `implicit-constructor-example.groovy`
