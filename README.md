@@ -30,3 +30,13 @@ $ groovy `path-to-file`
 Currently, groovy will throw a warning about accessing restricted methods.
 This is a known minor issue with the current JDK; if it bothers you there
 are workarounds.
+
+# Notes
+
+## `/run-strategies`
+There are a couple of different ways to run groovy scripts, compared to Java.
+You can create some sort of top level main class with a `main` method,
+as you would in Java (`/run-strategies/class-run-example.groovy`)
+
+You can also just write top level code in a file, and groovy will execute it
+as a script (`/run-strategies/script-run-example.groovy`)
