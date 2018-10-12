@@ -27,4 +27,6 @@ Once installed, you can run any of the files in this repo from the command line
 $ groovy `path-to-file`
 ```
 
-Currently, groovy
+Currently, groovy will throw a warning about accessing restricted methods.
+This is a known minor issue with the current JDK; if it bothers you there
+are workarounds.
