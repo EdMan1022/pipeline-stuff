@@ -40,3 +40,17 @@ as you would in Java (`/run-strategies/class-run-example.groovy`)
 
 You can also just write top level code in a file, and groovy will execute it
 as a script (`/run-strategies/script-run-example.groovy`)
+
+
+## `/class-examples`
+Classes in groovy behave a lot like classes in Java,
+but with some elements of Python thrown in because why not.
+If methods or fields are declared without a `private` specification,
+they default to `public`. Fields with no visibility modifier are also converted
+into attributes, so that `getters` and `setters` don't have to be declared.
+
+Constructors are implemented very simply by declaring a method that shares the
+class' name.
+Instantiation is also very flexible in groovy (compared to Java).
+You can def an object using `instance = new Class(args)`,
+`instance = [args] as Class`, or even `Class instance = [args]`.
